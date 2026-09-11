@@ -1,0 +1,27 @@
+# Fine riga normalizzate.
+# Senza questo file, git avvisa a ogni commit ("LF will be replaced by
+# CRLF") e, se un domani qualcun altro lavora al progetto da Linux o Mac,
+# ogni file risulterebbe modificato per intero a ogni salvataggio.
+# La regola: nel repository si salva sempre LF, sul disco Windows usa CRLF.
+* text=auto eol=lf
+
+# File di Windows che devono restare CRLF anche sul disco
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binari: git non deve toccarli in nessun modo
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.gif binary
+*.webp binary
+*.wav binary
+*.zip binary
+*.rar binary
+*.7z binary
+*.rpf binary
+*.ytd binary
+*.awc binary
+*.dat binary
+*.exe binary

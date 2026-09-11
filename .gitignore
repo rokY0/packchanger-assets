@@ -1,0 +1,11 @@
+# Nessun file temporaneo o di sistema nel repo degli asset:
+# qui dentro ci vanno solo pack, anteprime e metadati.
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.part
+
+# Cartelle di lavoro di chi prepara i pack (archivi scompattati, prove):
+_lavoro/
+_scratch/
