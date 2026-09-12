@@ -1,9 +1,0 @@
-Questa cartella e' un ESEMPIO: copiala e rinominala per creare un pack.
-
-Dentro servono:
-  - il file del pack     (.zip, .rar, .7z, .rpf, .dat, .ytd, .awc)
-  - un'immagine          (.png o .jpg) - diventa l'anteprima nell'app
-  - info.json            - nome e descrizione mostrati nell'app
-
-Quando hai finito, cancella pure questa cartella `_esempio`: viene
-ignorata dal generatore del manifest, ma non serve tenerla.

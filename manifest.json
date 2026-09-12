@@ -1,4 +1,48 @@
 {
   "_nota": "GENERATO AUTOMATICAMENTE da tools/build_manifest.py — non modificarlo a mano: le modifiche verrebbero perse al prossimo aggiornamento. Per cambiare nome o descrizione di un pack, modifica il suo info.json e rilancia lo script.",
-  "_versione": 2
+  "_versione": 2,
+  "blood-fx": [
+    {
+      "nome": "Artificio",
+      "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/artificio/bloodfx.dat",
+      "dimensione": 46098,
+      "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/artificio/preview.png"
+    },
+    {
+      "nome": "Confetti",
+      "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/confetti/bloodfx.dat",
+      "dimensione": 46191
+    },
+    {
+      "nome": "Coriandoli",
+      "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/coriandoli/bloodfx.dat",
+      "dimensione": 46197,
+      "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/coriandoli/preview.png"
+    },
+    {
+      "nome": "Coriandoli Blu",
+      "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/coriandoliblu/coriandoliblu.zip",
+      "dimensione": 13532868,
+      "descrizione": "effetti e texture",
+      "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/coriandoliblu/preview.png"
+    },
+    {
+      "nome": "Elettrico",
+      "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/elettrico/bloodfx.dat",
+      "dimensione": 45374,
+      "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/elettrico/preview.png"
+    },
+    {
+      "nome": "Esplosione",
+      "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/esplosione/bloodfx.dat",
+      "dimensione": 46382,
+      "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/esplosione/preview.png"
+    },
+    {
+      "nome": "Scintilla",
+      "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/scintilla/bloodfx.dat",
+      "dimensione": 46167,
+      "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/scintilla/preview.png"
+    }
+  ]
 }
