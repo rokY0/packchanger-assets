@@ -1,0 +1,297 @@
+===============================================================================
+              PACKCHANGER - COME CARICARE I PACK
+                    guida pratica
+===============================================================================
+
+In due righe:
+
+   UNA CARTELLA = UN PACK
+
+   Dentro ci metti tre cose: il file del pack, un'immagine di anteprima,
+   e un file info.json con nome e descrizione. Poi lanci un comando e fai
+   push. Fine.
+
+Il file manifest.json NON si scrive a mano: lo genera uno script.
+
+
+===============================================================================
+1. DOVE VANNO I FILE
+===============================================================================
+
+Tutto sta nel repo degli asset:
+
+   C:\Users\roky9\Desktop\packchanger-assets\
+
+Dentro ci sono cinque cartelle, una per categoria. I nomi sono FISSI,
+non cambiarli o l'app non trovera' piu' quella categoria:
+
+   grafica\          mod grafiche (texture, reshade, ecc.)
+   weapon-sounds\    suoni delle armi
+   blood-fx\         effetti sangue
+   vegetation\       vegetazione
+   tracers\          proiettili traccianti
+
+Dentro OGNI categoria, una cartella per ogni pack.
+
+
+===============================================================================
+2. COM'E' FATTO UN PACK
+===============================================================================
+
+Esempio completo, un pack di tracer rossi:
+
+   tracers\
+      red\                        <- il nome della cartella lo scegli tu
+         Red Tracers v2.zip       <- il file che viene installato
+         preview.png              <- l'immagine mostrata nell'app
+         info.json                <- i testi mostrati nell'app
+
+I NOMI DEI FILE NON CONTANO. Lo script capisce da solo cos'e' cosa
+guardando l'estensione:
+
+   .zip .rar .7z .rpf .dat .ytd .awc   ->  e' il pack
+   .png .jpg .jpeg .webp               ->  e' l'anteprima
+   .wav                                ->  e' l'anteprima audio
+
+Quindi "red.zip", "pack.zip" o "Red Tracers v2.zip" vanno bene uguale.
+Conta la CARTELLA: una cartella = un pack.
+
+
+-------------------------------------------------------------------------------
+IL FILE info.json
+-------------------------------------------------------------------------------
+
+E' un file di testo con questo contenuto (creabile col Blocco note):
+
+   {
+     "nome": "Red Tracers",
+     "descrizione": "proiettili traccianti rossi",
+     "autore": "nome di chi l'ha fatto"
+   }
+
+   "nome"         obbligatorio  -> il titolo sulla card nell'app
+   "descrizione"  facoltativo   -> la riga piccola sotto il titolo
+   "autore"       facoltativo   -> chi ha creato il pack
+
+ATTENZIONE alle virgolette: devono essere quelle dritte ("), non quelle
+curve che mette Word. Usa il Blocco note, non Word.
+
+Se ti dimentichi info.json non succede niente di grave: lo script usa il
+nome della cartella. "red_tracers_v2" diventa "Red Tracers V2".
+
+
+-------------------------------------------------------------------------------
+L'IMMAGINE DI ANTEPRIMA
+-------------------------------------------------------------------------------
+
+Quadrata, almeno 256x256 pixel. Nell'app viene rimpicciolita a 104x104,
+quindi non serve che sia grande: immagini leggere = download piu' veloci
+per chi usa il programma.
+
+Se manca, la card mostra un segnaposto grigio. Lo script te lo segnala.
+
+
+===============================================================================
+3. REGOLE PER CATEGORIA
+===============================================================================
+
+-------------------------------------------------------------------------------
+BLOOD-FX  ->  qui c'e' l'unica regola vera
+-------------------------------------------------------------------------------
+
+L'archivio DEVE contenere un file chiamato bloodfx.dat.
+
+Puo' stare anche dentro sottocartelle, lo script lo trova. Ma se non c'e'
+proprio, l'app rifiutera' di installare il pack.
+
+   blood-fx\money\money.zip
+      dentro:  bloodfx.dat                    OK
+      dentro:  roba\altro\bloodfx.dat         OK (lo trova)
+      dentro:  money_v3.dat                   OK (unico .dat, lo usa)
+      dentro:  a.dat + b.dat + readme.txt     NO (quale dei due?)
+
+Perche' questa regola: Blood-FX sostituisce UN file preciso del gioco.
+Copiarci dentro un file sbagliato impedisce a FiveM di avviarsi. Lo
+script te lo dice PRIMA che tu faccia push, non dopo.
+
+-------------------------------------------------------------------------------
+WEAPON-SOUNDS  ->  aggiungi un .wav per l'anteprima
+-------------------------------------------------------------------------------
+
+   weapon-sounds\realistic\
+      pack.zip          il pack vero (contiene .awc, .rpf, ecc.)
+      preview.wav       un WAV BREVE (2-3 secondi) per l'ascolto in app
+      info.json
+
+Il pulsante "Ascolta" nell'app funziona SOLO con file .wav. I formati
+veri dei sound pack (.awc, .rpf) nessun player sa aprirli. Senza il .wav
+il pulsante resta spento.
+
+Il .wav e' solo un assaggio per far sentire com'e': non viene installato.
+
+-------------------------------------------------------------------------------
+GRAFICA / VEGETATION / TRACERS  ->  nessuna regola particolare
+-------------------------------------------------------------------------------
+
+Metti l'archivio e basta. Viene estratto e il contenuto viene versato
+nella cartella giusta del gioco.
+
+Se l'archivio contiene una sola cartella con dentro tutto (tipo
+"Red Tracers v2\...") viene appiattita in automatico: non serve che tu
+la sistemi a mano.
+
+
+===============================================================================
+4. COME SI CARICA - PASSO PASSO
+===============================================================================
+
+PASSO 1 - Crea la cartella del pack
+
+   Vai in  C:\Users\roky9\Desktop\packchanger-assets\tracers\
+   Crea una cartella nuova, es.  red
+
+PASSO 2 - Mettici dentro i file
+
+   red\Red Tracers v2.zip
+   red\preview.png
+   red\info.json
+
+PASSO 3 - Rigenera il manifest
+
+   Apri il terminale nella cartella del CODICE e lancia:
+
+      cd C:\Users\roky9\Desktop\packchanger
+      python tools\build_manifest.py C:\Users\roky9\Desktop\packchanger-assets
+
+   Lo script legge le cartelle, calcola da solo tutti i link, e ti dice
+   cosa ha trovato:
+
+      Mod Grafica (citizen)    0 pack
+      Tracer                   1 pack
+
+      Avvisi:
+        ! tracers\blu: nessuna immagine di anteprima
+
+   LEGGI GLI AVVISI. Sono i problemi che altrimenti scoprirebbe chi
+   scarica l'app, senza capire perche'.
+
+PASSO 4 - Pubblica
+
+      cd C:\Users\roky9\Desktop\packchanger-assets
+      git add .
+      git commit -m "Aggiunto Red Tracers"
+      git push
+
+PASSO 5 - Fatto
+
+   Chi usa PackChanger vede il pack nuovo al prossimo avvio, oppure
+   subito premendo "Aggiorna ora" nella pagina Home.
+
+   Nessuno deve reinstallare o riscaricare il programma.
+
+
+===============================================================================
+5. AGGIORNARE UN PACK GIA' PUBBLICATO
+===============================================================================
+
+Se cambi il CONTENUTO di un file lasciandogli lo stesso nome, chi l'ha
+gia' scaricato continuera' a usare la vecchia copia (sta nella sua
+cache, e la cache va per nome del file).
+
+Soluzione semplice: RINOMINA il file.
+
+   red\Red Tracers v2.zip     ->     red\Red Tracers v3.zip
+
+Poi rigenera il manifest e fai push. Il link cambia, e tutti scaricano
+la versione nuova in automatico.
+
+In alternativa puoi dire alle persone di premere "Pulisci cache" nella
+barra a sinistra dell'app, ma e' meno comodo.
+
+
+===============================================================================
+6. ERRORI COMUNI
+===============================================================================
+
+"Ho aggiunto il pack ma non lo vedo nell'app"
+   -> Hai rigenerato il manifest? (PASSO 3)
+   -> Hai fatto git push? (PASSO 4)
+   -> Nell'app: Home -> "Aggiorna ora"
+
+"Lo script dice: nessun file pack riconosciuto, saltato"
+   -> Nella cartella non c'e' nessun file con un'estensione riconosciuta.
+      Forse hai messo solo l'immagine e info.json?
+
+"Lo script dice: lo zip non contiene bloodfx.dat"
+   -> Vedi la sezione BLOOD-FX qui sopra. Apri lo zip e controlla.
+
+"Il nome del pack nell'app e' sbagliato / e' il nome della cartella"
+   -> Manca info.json, oppure ha un errore di sintassi (virgola di
+      troppo, virgolette curve di Word). Aprilo col Blocco note.
+
+"Ho modificato manifest.json a mano e le modifiche sono sparite"
+   -> manifest.json e' GENERATO: viene riscritto ogni volta. Per cambiare
+      nome o descrizione modifica l'info.json del pack.
+
+"Il download nell'app non parte / il pack non si scarica"
+   -> Il repo degli asset deve essere PUBBLICO su GitHub. Se e' privato,
+      i link non funzionano per nessuno.
+
+
+===============================================================================
+7. SCHEMA RIASSUNTIVO
+===============================================================================
+
+   packchanger-assets\
+   |
+   +-- manifest.json              <- GENERATO, non toccare
+   |
+   +-- grafica\
+   |     +-- 4k-textures\
+   |           +-- pack.zip
+   |           +-- preview.png
+   |           +-- info.json
+   |
+   +-- weapon-sounds\
+   |     +-- realistic\
+   |           +-- pack.zip
+   |           +-- preview.wav    <- per il pulsante "Ascolta"
+   |           +-- preview.png
+   |           +-- info.json
+   |
+   +-- blood-fx\
+   |     +-- money\
+   |           +-- money.zip      <- DEVE contenere bloodfx.dat
+   |           +-- preview.png
+   |           +-- info.json
+   |
+   +-- vegetation\
+   |     +-- realistic\
+   |           +-- pack.zip
+   |           +-- preview.png
+   |           +-- info.json
+   |
+   +-- tracers\
+         +-- red\
+               +-- Red Tracers v2.zip
+               +-- preview.png
+               +-- info.json
+
+
+===============================================================================
+COMANDI, IN BREVE
+===============================================================================
+
+   Rigenerare il manifest:
+      python tools\build_manifest.py C:\Users\roky9\Desktop\packchanger-assets
+
+   Pubblicare:
+      cd C:\Users\roky9\Desktop\packchanger-assets
+      git add .
+      git commit -m "descrizione di cosa hai aggiunto"
+      git push
+
+   Ricreare la struttura delle cartelle (se ne cancelli una per sbaglio):
+      python tools\init_assets_repo.py C:\Users\roky9\Desktop\packchanger-assets
+
+===============================================================================
