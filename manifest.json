@@ -1,6 +1,25 @@
 {
   "_nota": "GENERATO AUTOMATICAMENTE da tools/build_manifest.py — non modificarlo a mano: le modifiche verrebbero perse al prossimo aggiornamento. Per cambiare nome o descrizione di un pack, modifica il suo info.json e rilancia lo script.",
   "_versione": 2,
+  "grafica": [
+    {
+      "nome": "ChromatiX Legacy",
+      "file_url": "https://github.com/rokY0/packchanger-assets/releases/download/chromatix-legacy/ChromatiX-Legacy.zip",
+      "dimensione": 754390518,
+      "descrizione": "ReShade e texture: illuminazione, riflessi e colori rifatti",
+      "autore": "ChromatiX",
+      "opzionali": [
+        {
+          "cartella": "Improved Vegetation",
+          "nome": "Vegetazione migliorata"
+        },
+        {
+          "cartella": "Extreme Reflections",
+          "nome": "Riflessi estremi"
+        }
+      ]
+    }
+  ],
   "blood-fx": [
     {
       "nome": "Artificio",
@@ -23,7 +42,6 @@
       "nome": "Coriandoli Blu",
       "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/coriandoliblu/coriandoliblu.zip",
       "dimensione": 13532868,
-      "descrizione": "effetti e texture",
       "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/coriandoliblu/preview.png"
     },
     {

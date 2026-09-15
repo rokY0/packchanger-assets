@@ -1,0 +1,11 @@
+{
+  "nome": "ChromatiX Legacy",
+  "descrizione": "ReShade e texture: illuminazione, riflessi e colori rifatti",
+  "autore": "ChromatiX",
+  "url": "https://github.com/rokY0/packchanger-assets/releases/download/chromatix-legacy/ChromatiX-Legacy.zip",
+  "dimensione": 754390518,
+  "opzionali": [
+    {"cartella": "Improved Vegetation", "nome": "Vegetazione migliorata"},
+    {"cartella": "Extreme Reflections", "nome": "Riflessi estremi"}
+  ]
+}
