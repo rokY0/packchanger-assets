@@ -126,6 +126,56 @@
   ],
   "crosshair": [
     {
+      "nome": "Bianco compatto",
+      "comando": "cl_crosshairstyle 2;cl_crosshairsize -1.5;cl_crosshairthickness 1;cl_crosshairgap -3;cl_crosshairdot 0;cl_crosshair_t 0;cl_crosshair_drawoutline 0;cl_crosshair_outlinethickness 0;cl_crosshaircolor 5;cl_crosshaircolor_r 255;cl_crosshaircolor_g 255;cl_crosshaircolor_b 255;cl_crosshairalpha 255;cl_crosshairusealpha 1;cl_crosshair_dynamic_splitdist 7;cl_crosshair_dynamic_splitalpha_innermod 1;cl_crosshair_dynamic_splitalpha_outermod 1;cl_crosshair_dynamic_maxdist_splitratio 1;cl_customCrosshair true",
+      "valori": {
+        "size": -1.5,
+        "thickness": 1.0,
+        "gap": -3.0,
+        "dot": false,
+        "t": false,
+        "outline": false,
+        "outline_thickness": 0.0,
+        "color": 5,
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "alpha": 255,
+        "usealpha": true,
+        "style": 2,
+        "splitdist": 7.0,
+        "innermod": 1.0,
+        "outermod": 1.0,
+        "splitratio": 1.0
+      },
+      "risoluzione": "1920x1080"
+    },
+    {
+      "nome": "Bianco micro",
+      "comando": "cl_crosshairstyle 2;cl_crosshairsize -1.5;cl_crosshairthickness 1;cl_crosshairgap -5;cl_crosshairdot 0;cl_crosshair_t 0;cl_crosshair_drawoutline 0;cl_crosshair_outlinethickness 0;cl_crosshaircolor 5;cl_crosshaircolor_r 255;cl_crosshaircolor_g 255;cl_crosshaircolor_b 255;cl_crosshairalpha 255;cl_crosshairusealpha 1;cl_crosshair_dynamic_splitdist 7;cl_crosshair_dynamic_splitalpha_innermod 1;cl_crosshair_dynamic_splitalpha_outermod 1;cl_crosshair_dynamic_maxdist_splitratio 0.35;cl_customCrosshair true",
+      "valori": {
+        "size": -1.5,
+        "thickness": 1.0,
+        "gap": -5.0,
+        "dot": false,
+        "t": false,
+        "outline": false,
+        "outline_thickness": 0.0,
+        "color": 5,
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "alpha": 255,
+        "usealpha": true,
+        "style": 2,
+        "splitdist": 7.0,
+        "innermod": 1.0,
+        "outermod": 1.0,
+        "splitratio": 0.35
+      },
+      "risoluzione": "1920x1080"
+    },
+    {
       "nome": "Ciano preciso",
       "comando": "cl_crosshairstyle 4;cl_crosshairsize 2;cl_crosshairthickness 1;cl_crosshairgap -2;cl_crosshairdot 0;cl_crosshair_t 0;cl_crosshair_drawoutline 1;cl_crosshair_outlinethickness 1;cl_crosshaircolor 4;cl_crosshairalpha 255;cl_crosshairusealpha 1;cl_customCrosshair true",
       "valori": {
@@ -272,6 +322,31 @@
         "innermod": 1.0,
         "outermod": 0.5,
         "splitratio": 0.35
+      },
+      "risoluzione": "1920x1080"
+    },
+    {
+      "nome": "Verde compatto",
+      "comando": "cl_crosshairstyle 2;cl_crosshairsize 1.5;cl_crosshairthickness 0.5;cl_crosshairgap -3;cl_crosshairdot 0;cl_crosshair_t 0;cl_crosshair_drawoutline 0;cl_crosshair_outlinethickness 0;cl_crosshaircolor 1;cl_crosshairalpha 255;cl_crosshairusealpha 1;cl_crosshair_dynamic_splitdist 7;cl_crosshair_dynamic_splitalpha_innermod 1;cl_crosshair_dynamic_splitalpha_outermod 1;cl_crosshair_dynamic_maxdist_splitratio 1;cl_customCrosshair true",
+      "valori": {
+        "size": 1.5,
+        "thickness": 0.5,
+        "gap": -3.0,
+        "dot": false,
+        "t": false,
+        "outline": false,
+        "outline_thickness": 0.0,
+        "color": 1,
+        "r": 255,
+        "g": 157,
+        "b": 207,
+        "alpha": 255,
+        "usealpha": true,
+        "style": 2,
+        "splitdist": 7.0,
+        "innermod": 1.0,
+        "outermod": 1.0,
+        "splitratio": 1.0
       },
       "risoluzione": "1920x1080"
     }
