@@ -19,6 +19,35 @@
           "nome": "Riflessi estremi"
         }
       ]
+    },
+    {
+      "nome": "QuantV",
+      "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/quantv/quantv.zip",
+      "dimensione": 32611157,
+      "descrizione": "ReShade e LUT cinematografici, con preset per giorno/notte e meteo",
+      "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/quantv/preview.png",
+      "opzionali": [
+        {
+          "cartella": "Distanza e riflessi estesi (cala le prestazioni)",
+          "nome": "Distanza e riflessi estesi — solo PC potenti, cala le prestazioni"
+        },
+        {
+          "cartella": "Meteo con neve e pioggia (per RP)",
+          "nome": "Meteo con neve e pioggia (per RP)"
+        },
+        {
+          "cartella": "Motion blur (in FiveM)",
+          "nome": "Motion blur (in FiveM)"
+        },
+        {
+          "cartella": "Motion blur (in R Editor)",
+          "nome": "Motion blur (nel Rockstar Editor)"
+        },
+        {
+          "cartella": "Vehshare personalizzato (gomme HQ, targhe CA)",
+          "nome": "Vehshare personalizzato (gomme HQ, targhe CA)"
+        }
+      ]
     }
   ],
   "blood-fx": [
