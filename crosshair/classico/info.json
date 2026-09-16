@@ -1,0 +1,5 @@
+{
+  "nome": "Classico",
+  "comando": "cl_crosshairstyle 4;cl_crosshairsize 3;cl_crosshairthickness 1;cl_crosshairgap -1;cl_crosshairdot 0;cl_crosshair_drawoutline 1;cl_crosshair_outlinethickness 1;cl_crosshaircolor 1;cl_crosshairalpha 255",
+  "risoluzione": "1920x1080"
+}
