@@ -3,6 +3,12 @@
   "_versione": 2,
   "grafica": [
     {
+      "nome": "Brasil HD",
+      "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/brasil-hd/brasilhd.zip",
+      "dimensione": 505853,
+      "autore": "Snail"
+    },
+    {
       "nome": "ChromatiX",
       "file_url": "https://github.com/rokY0/packchanger-assets/releases/download/chromatix-legacy/ChromatiX-Legacy.zip",
       "dimensione": 754390518,
