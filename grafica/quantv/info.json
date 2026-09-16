@@ -1,6 +1,6 @@
 {
   "nome": "QuantV",
-  "descrizione": "ReShade e LUT cinematografici, con preset per giorno/notte e meteo",
+  "descrizione": "14/09/2026",
   "opzionali": [
     {"cartella": "Meteo con neve e pioggia (per RP)", "nome": "Meteo con neve e pioggia (per RP)"},
     {"cartella": "Distanza e riflessi estesi (cala le prestazioni)",
