@@ -1,5 +1,0 @@
-{
-  "nome": "Bianco micro",
-  "comando": "cl_crosshairalpha \"255\";cl_crosshaircolor \"5\";cl_crosshaircolor_b \"255\";cl_crosshaircolor_r \"255\";cl_crosshaircolor_g \"255\";cl_crosshairdot \"0\";cl_crosshairgap \"-5\";cl_crosshairsize \"1\";cl_crosshairstyle \"4\";cl_crosshairusealpha \"1\";cl_crosshairthickness \"1\";cl_fixedcrosshairgap \"-5\";cl_crosshair_outlinethickness \"0\";cl_crosshair_drawoutline\"cl_crosshair_drawoutline\" \"false\"; \"cl_crosshair_dynamic_maxdist_splitratio\" \"0.350000\"; \"cl_crosshair_dynamic_splitalpha_innermod\" \"1.000000\"; \"cl_crosshair_dynamic_splitalpha_outermod\" \"1.000000\"; \"cl_crosshair_dynamic_splitdist\" \"7.000000\"; \"cl_crosshair_outlinethickness\" \"0.000000\"; \"cl_crosshairalpha\" \"255\"; \"cl_crosshaircolor\" \"5\"; \"cl_crosshaircolor_b\" \"255\"; \"cl_crosshaircolor_g\" \"255\"; \"cl_crosshaircolor_r\" \"255\"; \"cl_crosshairdot\" \"false\"; \"cl_crosshairgap\" \"-5.000000\"; \"cl_crosshairsize\" \"-1.500000\"; \"cl_crosshairstyle\" \"2\"; \"cl_crosshairthickness",
-  "risoluzione": "1920x1080"
-}

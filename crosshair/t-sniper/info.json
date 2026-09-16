@@ -1,5 +1,0 @@
-{
-  "nome": "T sniper",
-  "comando": "cl_crosshairstyle 4;cl_crosshairsize 4;cl_crosshairthickness 0.5;cl_crosshairgap 0;cl_crosshairdot 1;cl_crosshair_t 1;cl_crosshair_drawoutline 0;cl_crosshaircolor 2;cl_crosshairalpha 255",
-  "risoluzione": "1920x1080"
-}

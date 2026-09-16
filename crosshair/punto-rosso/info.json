@@ -1,5 +1,0 @@
-{
-  "nome": "Punto rosso",
-  "comando": "cl_crosshairstyle 4;cl_crosshairsize 0;cl_crosshairthickness 1.5;cl_crosshairgap -5;cl_crosshairdot 1;cl_crosshair_drawoutline 1;cl_crosshair_outlinethickness 1;cl_crosshaircolor 0;cl_crosshairalpha 255",
-  "risoluzione": "1920x1080"
-}
