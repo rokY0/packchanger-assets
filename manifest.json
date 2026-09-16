@@ -3,7 +3,7 @@
   "_versione": 2,
   "grafica": [
     {
-      "nome": "ChromatiX Legacy",
+      "nome": "ChromatiX",
       "file_url": "https://github.com/rokY0/packchanger-assets/releases/download/chromatix-legacy/ChromatiX-Legacy.zip",
       "dimensione": 754390518,
       "descrizione": "11/08/2026",
@@ -17,6 +17,19 @@
         {
           "cartella": "Extreme Reflections",
           "nome": "Riflessi estremi"
+        }
+      ]
+    },
+    {
+      "nome": "CoreFX",
+      "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/corefx/corefx.zip",
+      "dimensione": 1440342432,
+      "descrizione": "15/09/2026",
+      "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/corefx/preview.png",
+      "opzionali": [
+        {
+          "cartella": "Classic Roads",
+          "nome": "Classic Roads"
         }
       ]
     },
