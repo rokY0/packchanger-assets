@@ -5,5 +5,12 @@
   "dimensione": 1440342432,
   "opzionali": [
     {"cartella": "Classic Roads", "nome": "Classic Roads"}
+  ],
+  "note_installazione": [
+    "Nelle impostazioni del gioco usa DirectX 11 e metti PostFX e Qualità shader su Ultra: evita difetti visivi e notti troppo scure.",
+    "Imposta la luminosità del gioco intorno al 40-50%.",
+    "In gioco premi Pag su per aprire il menu di ReShade, poi la finestra CoreFX Addon: lì ci sono tutte le impostazioni.",
+    "Pag giù accende e spegne gli effetti.",
+    "Se il menu degli shader è vuoto, imposta in Home la cartella di GTA V e reinstalla CoreFX: va copiato anche lì."
   ]
 }
