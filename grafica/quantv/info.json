@@ -2,12 +2,25 @@
   "nome": "QuantV",
   "descrizione": "14/09/2026",
   "opzionali": [
-    {"cartella": "Meteo con neve e pioggia (per RP)", "nome": "Meteo con neve e pioggia (per RP)"},
-    {"cartella": "Distanza e riflessi estesi (cala le prestazioni)",
-     "nome": "Distanza e riflessi estesi — solo PC potenti, cala le prestazioni"},
-    {"cartella": "Motion blur (in FiveM)", "nome": "Motion blur (in FiveM)"},
-    {"cartella": "Motion blur (in R Editor)", "nome": "Motion blur (nel Rockstar Editor)"},
-    {"cartella": "Vehshare personalizzato (gomme HQ, targhe CA)",
-     "nome": "Vehshare personalizzato (gomme HQ, targhe CA)"}
+    {
+      "cartella": "Meteo con neve e pioggia (per RP)",
+      "nome": "Meteo con neve e pioggia (per RP)"
+    },
+    {
+      "cartella": "Distanza e riflessi estesi (cala le prestazioni)",
+      "nome": "Distanza e riflessi estesi (pesante)"
+    },
+    {
+      "cartella": "Motion blur (in FiveM)",
+      "nome": "Motion blur (in FiveM)"
+    },
+    {
+      "cartella": "Motion blur (in R Editor)",
+      "nome": "Motion blur (nel Rockstar Editor)"
+    },
+    {
+      "cartella": "Vehshare personalizzato (gomme HQ, targhe CA)",
+      "nome": "Vehshare personalizzato (gomme HQ, targhe CA)"
+    }
   ]
 }
