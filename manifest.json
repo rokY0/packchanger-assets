@@ -124,6 +124,10 @@
       "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/blood-fx/scintilla/preview.png"
     }
   ],
+  "crosshair_clip": {
+    "url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/crosshair-clip/clip.zip",
+    "dimensione": 46846546
+  },
   "crosshair": [
     {
       "nome": "Bianco compatto",
