@@ -6,7 +6,8 @@
       "nome": "Brasil HD",
       "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/brasil-hd/brasilhd.zip",
       "dimensione": 505853,
-      "autore": "Snail"
+      "autore": "Snail",
+      "link_anteprima": "https://imgur.com/a/yagxOlT"
     },
     {
       "nome": "ChromatiX",
@@ -15,6 +16,7 @@
       "descrizione": "11/08/2026",
       "autore": "ChromatiX",
       "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/chromatix-legacy/preview.png",
+      "link_anteprima": "https://imgur.com/a/WhhsYDK",
       "opzionali": [
         {
           "cartella": "Improved Vegetation",
@@ -39,6 +41,7 @@
         "Se il menu degli shader è vuoto, imposta in Home la cartella di GTA V e reinstalla CoreFX: va copiato anche lì."
       ],
       "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/corefx/preview.png",
+      "link_anteprima": "https://imgur.com/a/corefx-vLNpuUm",
       "opzionali": [
         {
           "cartella": "Classic Roads",
