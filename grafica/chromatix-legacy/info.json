@@ -5,8 +5,24 @@
   "url": "https://github.com/rokY0/packchanger-assets/releases/download/chromatix-legacy/ChromatiX-Legacy.zip",
   "dimensione": 754390518,
   "opzionali": [
-    {"cartella": "Improved Vegetation", "nome": "Vegetazione migliorata"},
-    {"cartella": "Extreme Reflections", "nome": "Riflessi estremi"}
+    {
+      "cartella": "Improved Vegetation",
+      "nome": "Vegetazione migliorata"
+    },
+    {
+      "cartella": "Extreme Reflections",
+      "nome": "Riflessi estremi"
+    }
   ],
-  "link_anteprima": "https://imgur.com/a/WhhsYDK"
+  "link_anteprima": "https://imgur.com/a/WhhsYDK",
+  "immagini": [
+    "anteprime/5aGwVpT.webp",
+    "anteprime/bmQz8H7.webp",
+    "anteprime/VA5rAwP.webp",
+    "anteprime/TESb44I.webp",
+    "https://i.imgur.com/PrkFdGSh.jpg",
+    "https://i.imgur.com/K4Sp6HKh.jpg",
+    "https://i.imgur.com/SVUYcAph.jpg",
+    "https://i.imgur.com/oDQ8Y37h.jpg"
+  ]
 }

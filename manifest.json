@@ -7,7 +7,11 @@
       "file_url": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/brasil-hd/brasilhd.zip",
       "dimensione": 505853,
       "autore": "Snail",
-      "link_anteprima": "https://imgur.com/a/yagxOlT"
+      "link_anteprima": "https://imgur.com/a/yagxOlT",
+      "immagini": [
+        "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/brasil-hd/anteprime/7Psagxh.webp",
+        "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/brasil-hd/anteprime/rOOPAvl.webp"
+      ]
     },
     {
       "nome": "ChromatiX",
@@ -17,6 +21,16 @@
       "autore": "ChromatiX",
       "anteprima": "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/chromatix-legacy/preview.png",
       "link_anteprima": "https://imgur.com/a/WhhsYDK",
+      "immagini": [
+        "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/chromatix-legacy/anteprime/5aGwVpT.webp",
+        "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/chromatix-legacy/anteprime/bmQz8H7.webp",
+        "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/chromatix-legacy/anteprime/VA5rAwP.webp",
+        "https://raw.githubusercontent.com/rokY0/packchanger-assets/main/grafica/chromatix-legacy/anteprime/TESb44I.webp",
+        "https://i.imgur.com/PrkFdGSh.jpg",
+        "https://i.imgur.com/K4Sp6HKh.jpg",
+        "https://i.imgur.com/SVUYcAph.jpg",
+        "https://i.imgur.com/oDQ8Y37h.jpg"
+      ],
       "opzionali": [
         {
           "cartella": "Improved Vegetation",
